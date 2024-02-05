@@ -4,22 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Inicial</title>
+  <link rel="preload" href="css/normalized.css" as="style">
+  <link rel="stylesheet" href="css/normalized.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&display=swap" rel="stylesheet">
   <link rel="preload" href="css/styles.css" as="style">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
   <header> 
-    <h1>Ricardo Contreras <span>Front-End Developer</span></h1> 
+    <h1 class="titulo">Ricardo Contreras <span>Front-End Developer</span></h1> 
   </header>
-  <nav>
-    <!--En esta parte, se hace uso del href para referir el usuario a una
-    pagina aparte, en este proyecto no se hara uso de ellas, pero lo
-  tendre en mente para mis porpios trabajos-->
-    <a href="#">Inicio</a>
-    <a href="#">Sobre Mi</a>
-    <a href="#">Clientes</a>
-    <a href="#">Contacto</a>
-  </nav>
+  <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+      <!--En esta parte, se hace uso del href para referir el usuario a una
+      pagina aparte, en este proyecto no se hara uso de ellas, pero lo
+    tendre en mente para mis porpios trabajos-->
+      <a href="#">Inicio</a>
+      <a href="#">Sonbre Mi</a>
+      <a href="#">Clientes</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
 <!--Borrar la "o" extra para aggregar la imagen-->
   <img src="img/heroo.jpg">
 
@@ -29,7 +36,7 @@ es el Titulo de mi pagina lo mas importante-->
       <section> 
         <h2>Diseño y desarrollo Web</h2>
           <p>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
               <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
