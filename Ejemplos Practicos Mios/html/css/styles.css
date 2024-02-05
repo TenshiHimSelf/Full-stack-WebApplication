@@ -7,6 +7,15 @@
   --fontBody:'Nunito', sans-serif;
 }
 
+:root{
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #FFC107;
+  --secundario: #0097a7;
+  --gris: #757575;
+  --fontBody:'Nunito', sans-serif;
+}
+
 html{
   font-size: 62.5%;
 }
@@ -25,6 +34,34 @@ body{
 
 .titulo span {
   font-size: 2rem;
+}
+
+
+.contenedor{
+  width: 120rem;
+  margin: 0 auto 0 auto;
+
+}
+
+.nav-bg{
+  background-color: var(--secundario);
+}
+
+.navegacion-principal{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navegacion-principal a{
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+  background-color: var(--primario);
+  color: var(--oscuro);
 }
 
 
