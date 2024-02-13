@@ -91,3 +91,30 @@ Ejemplo:
   margin: 0 auto 0 auto;
 
   estos 2 funcionan exactamente iguales
+
+
+  Responsive web pages:
+
+Repasar sonbre los Media querrys
+
+
+  la etiqueta  @media es la encargada de poder hacer que la pagina haga acciones dependiento de las condicciones
+
+Este ejemplo estamos usando @media para que cuando la pagina llege a 768px, el background color cambien.
+
+para que la pagia cambie de color, se tiene que cumplir la condicion de llegar a 768px
+
+  @media (min-width: 768px) {
+  body {
+    background-color: cornflowerblue;
+  }
+}
+
+Medidas Recomendadas:
+480px Telefono
+768px tablet
+1140px/1400px Monitor
+
+
+CSS Box Model:
+Esto en CSS basicamente son las medidas de los contenidos en forma de cuatrado, como dice el nombre "box model"

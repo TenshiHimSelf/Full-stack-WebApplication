@@ -7,22 +7,39 @@
   --fontBody:'Nunito', sans-serif;
 }
 
-:root{
-  --blanco: #ffffff;
-  --oscuro: #212121;
-  --primario: #FFC107;
-  --secundario: #0097a7;
-  --gris: #757575;
-  --fontBody:'Nunito', sans-serif;
-}
 
 html{
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
 }
 
 body{
   font-size: 16px;
   font-family: var(--fontBody);
+  background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100%);
+}
+
+
+
+
+h1{
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8;
+}
+
+h1,h2,h3{
+  text-align: center;
 }
 
 
@@ -37,15 +54,37 @@ body{
 }
 
 
-.contenedor{
-  width: 120rem;
-  margin: 0 auto 0 auto;
-
-}
-
-.nav-bg{
+.boton {
   background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .5rem;
+  width: 90%;
+  text-align: center;
 }
+
+@media (min-width: 768px){
+  .boton{
+  width: auto;
+  } 
+}
+
+.sombra {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(128,128,128,1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(128,128,128,1);
+  box-shadow: 0px 5px 15px 0px rgba(128,128,128,1);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+
+
 
 .navegacion-principal{
   display: flex;
@@ -66,10 +105,11 @@ body{
 
 
 .contenedor{
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto 0 auto;
 
 }
+
 
 .nav-bg{
   background-color: var(--secundario);
@@ -77,7 +117,16 @@ body{
 
 .navegacion-principal{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 1000px){
+  .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 15rem;
+  margin: 0 auto 0 auto;
+  }
 }
 
 .navegacion-principal a{
@@ -90,4 +139,39 @@ body{
 .navegacion-principal a:hover{
   background-color: var(--primario);
   color: var(--oscuro);
+}
+
+.hero{
+  background-image: url(/Ejemplos\ Practicos\ Mios/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.contenido-hero{
+  position: absolute;
+  background-color: rgb(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p{
+  color: var(--blanco);
+}
+
+@media (min-width:768px){
+  .servicios {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    
+
+  }
 }
